@@ -293,6 +293,17 @@ img {
   }
 }
 
+@media (max-width: 360px) {
+  -list__text {
+    min-width: 200px;
+  }
+  -list__item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 @media (max-width: 320px) {
   .hero {
     padding: 40px 0;
