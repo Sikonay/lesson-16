@@ -22,7 +22,7 @@
 
 body {
   font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300px;
+  font-weight: 400;
 }
 
 img {
@@ -66,7 +66,7 @@ img {
   background-color: #ffd200;
   border: none;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700px;
+  font-weight: 400;
 }
 
 .button:hover {
@@ -81,7 +81,7 @@ img {
 .section-title {
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700px;
+  font-weight: 400;
 }
 
 .section-subtitle {
@@ -141,12 +141,12 @@ img {
   height: 49px;
   font-size: 14px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700px;
+  font-weight: 400;
 }
 
 .navbar__phone {
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700px;
+  font-weight: 400;
   display: inline-block;
   color: #333333;
   font-size: 20px;
@@ -198,12 +198,12 @@ img {
 }
 
 .hero-text__title {
-  font-size: 39px;
-  font-weight: 800;
+  font-size: 41px;
+  font-weight: 400;
   line-height: 55px;
   margin-bottom: 50px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700px;
+  font-weight: 400;
 }
 
 .hero-text__subtitle {
@@ -211,7 +211,8 @@ img {
   font-size: 20px;
   margin-bottom: 70px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700px;
+  font-weight: 400;
+  font-weight: 400;
 }
 
 .hero-image__img {
@@ -257,6 +258,8 @@ img {
 
 .hero-list__text {
   max-width: 300px;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 @media (max-width: 1200px) {
@@ -394,7 +397,7 @@ img {
   display: inline-block;
   color: #333333;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700px;
+  font-weight: 400;
 }
 
 @media (max-width: 1200px) {
