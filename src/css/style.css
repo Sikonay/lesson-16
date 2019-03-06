@@ -1,15 +1,16 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Museo Sans Light';
-  src: url("../fonts/MuseoSansCYRL/MuseoSansCyrl-300.eot");
-  src: url("../fonts/MuseoSansCYRL/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCYRL/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCYRL/MuseoSansCyrl-300.ttf") format("truetype");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Museo Sans Bold';
-  src: url("../fonts/MuseoSansCYRL/MuseoSansCyrl-700.eot");
-  src: url("../fonts/MuseoSansCYRL/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCYRL/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCYRL/MuseoSansCyrl-700.ttf") format("truetype");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -21,8 +22,7 @@
 
 body {
   font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
+  font-weight: 300px;
 }
 
 img {
@@ -30,7 +30,7 @@ img {
 }
 
 .container {
-  width: 1170px;
+  width: 1178px;
   margin: auto;
 }
 
@@ -42,24 +42,22 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 566px;
-    width: 90%;
+    max-width: 580px;
+    width: 95%;
   }
 }
 
 @media (max-width: 567px) {
   .container {
-    max-width: 420px;
-    width: 90%;
+    max-width: 400px;
+    width: 95%;
   }
 }
 
-@media (max-width: 320px) {
-  body {
-    line-height: 1.5;
-  }
+@media (max-width: 321px) {
   .container {
-    width: 90%;
+    max-width: 400px;
+    width: 86%;
   }
 }
 
@@ -67,22 +65,38 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 18px 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700px;
 }
 
 .button:hover {
-  background-color: #cca800;
+  background-color: #ffdb33;
   cursor: pointer;
 }
 
 .section {
-  padding: 90px 0;
+  padding: 67px 0;
 }
 
 .section-title {
   font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700px;
 }
 
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+/* Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
 }
@@ -127,12 +141,12 @@ img {
   height: 49px;
   font-size: 14px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 .navbar__phone {
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 700px;
   display: inline-block;
   color: #333333;
   font-size: 20px;
@@ -158,9 +172,11 @@ img {
     width: auto;
     height: auto;
     margin: 0;
+    font-size: 10px;
   }
 }
 
+/* Стили для главного экрана */
 .hero {
   padding: 50px 0;
   background-color: #f5f5f5;
@@ -178,28 +194,27 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-right: 60px;
 }
 
 .hero-text__title {
   font-size: 41px;
+  font-weight: 800;
   line-height: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 .hero-text__subtitle {
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-  font-size: 19px;
   display: inline-block;
-  margin-bottom: 65px;
+  font-size: 20px;
+  margin-bottom: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700px;
 }
 
-.hero__img {
+.hero-image__img {
   -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
           box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
@@ -217,7 +232,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
-  line-height: 1.5;
 }
 
 .hero-list__item:last-child {
@@ -225,18 +239,24 @@ img {
 }
 
 .hero-list__image {
-  min-width: 40px;
-  min-height: 40px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #ffd200;
-  display: block;
-  padding: 8px 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   margin-right: 30px;
 }
 
 .hero-list__text {
-  min-width: 300px;
-  font-size: 14px;
+  max-width: 300px;
 }
 
 @media (max-width: 1200px) {
@@ -247,32 +267,14 @@ img {
             flex-direction: column;
   }
   .hero-list {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
   .hero-text {
-    padding-left: 10px;
-    text-align: center;
-  }
-  .hero-list__item {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: left;
-  }
-  .hero-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-right: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .hero__img {
-    height: 402px;
-  }
   .hero-text__title {
     font-size: 24px;
     line-height: 1.4;
@@ -288,46 +290,30 @@ img {
   .hero-list__text {
     font-size: 12px;
   }
-  .hero-list__image {
-    margin-right: 15px;
-  }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .hero-list__text {
-    min-width: 200px;
-  }
-  .hero-list__item {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    max-width: 200px;
   }
 }
 
 @media (max-width: 320px) {
   .hero {
-    padding: 40px 0;
-  }
-  .hero-text {
-    text-align: left;
-    padding-left: 0;
-  }
-  .hero-text__title {
-    margin: 0;
+    padding: 29px 0;
   }
   .hero-list__text {
-    min-width: 200px;
+    max-width: 180px;
   }
-  .hero-list__item {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+  .hero-text {
+    padding-right: 0;
   }
-  .hero__img {
-    height: 272px;
+  .hero-text__title {
+    margin-bottom: 4px;
   }
 }
 
+/* Стили для блока offer */
 .offer {
   background: url("../img/offer/offer-image.png") no-repeat;
   background-position: center right;
@@ -408,7 +394,7 @@ img {
   display: inline-block;
   color: #333333;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 @media (max-width: 1200px) {
@@ -468,12 +454,30 @@ img {
   }
 }
 
+@media (max-width: 320px) {
+  .offer {
+    padding: 50px 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  .offer__input:first-child {
+    margin-bottom: 12px;
+  }
+  .offer__button {
+    margin-top: 12px;
+  }
+}
+
+/* Стили для модального окна */
 .modal {
   position: fixed;
-  top: 0;
   left: 0;
-  width: 100%;
+  top: 0;
   height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -487,7 +491,7 @@ img {
 .modal-dialog {
   position: relative;
   margin: auto;
-  min-width: 450px;
+  max-width: 450px;
   width: 90%;
   min-width: 200px;
   background-color: #fff;
